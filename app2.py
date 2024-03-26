@@ -6,17 +6,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
-import os  # Import the os module
-
-
-# Get the absolute path to the directory containing the script
-script_directory = os.path.dirname(os.path.abspath(r"C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION"))
-
-# Define the path to your model file using an absolute path
-model_path = os.path.join(script_directory, 'Stock Predictions Model 2025.keras')
-
-# Load the pre-trained model
-model = load_model(model_path)
 
 # Streamlit setup
 st.header('Stock Price Predictor')
