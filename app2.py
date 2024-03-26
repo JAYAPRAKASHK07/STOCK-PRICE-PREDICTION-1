@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import os  # Import the os module
 
 # Get the absolute path to the directory containing the script
-script_directory = os.path.dirname(os.path.abspath("C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION"))
+script_directory = os.path.dirname(os.path.abspath(r"C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION"))
 
 # Define the path to your model file using an absolute path
 model_path = os.path.join(script_directory, 'Stock Predictions Model 2025.keras')
