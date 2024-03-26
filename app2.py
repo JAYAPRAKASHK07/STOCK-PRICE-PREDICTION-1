@@ -8,7 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
 
 # Load the pre-trained model
-model = load_model('D:\BBB\Stock Predictions Model 2025.keras')
+model = load_model('https://github.com/JAYAPRAKASHK07/STOCK-PRICE-PREDICTION-1/blob/main/Stock%20Predictions%20Model%202025.keras')
 
 # Streamlit setup
 st.header('Stock Price Predictor')
