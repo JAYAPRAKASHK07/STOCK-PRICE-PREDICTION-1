@@ -7,14 +7,13 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
 
-from keras.models import load_model
-import streamlit as st
 import os
 
-# Define the path to your model file in the repository
-model_path = os.path.join(os.getcwd(), 'Stock Predictions Model 2025.keras')
+# Specify the path to the cloned repository directory
+cloned_repo_dir = 'C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION'
 
-# Load the pre-trained model
+# Load the Keras model from the cloned repository
+model_path = os.path.join(cloned_repo_dir, 'Stock Predictions Model 2025.keras')
 model = load_model(model_path)
 
 
