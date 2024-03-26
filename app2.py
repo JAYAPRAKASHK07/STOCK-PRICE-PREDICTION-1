@@ -6,9 +6,23 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
+import requests
+
+# Define the URL of the raw Keras model file in your GitHub repository
+model_url = 'https://raw.githubusercontent.com/your_username/your_repository/main/path/to/Stock%20Predictions%20Model%202025.keras'
+
+# Download the model file from GitHub
+response = requests.get(model_url)
+with open('Stock Predictions Model 2025.keras', 'wb') as f:
+    f.write(response.content)
 
 # Load the pre-trained model
-model = load_model('D:\BBB\Stock Predictions Model 2025.keras')
+model = load_model('Stock Predictions Model 2025.keras')
+
+# Streamlit setup
+st.header('Stock Price Predictor')
+
+# Rest of your code remains the same...
 
 # Streamlit setup
 st.header('Stock Price Predictor')
