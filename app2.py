@@ -8,11 +8,9 @@ from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
 from tensorflow.keras.models import load_model, save_model
 
-# Save model in SavedModel format
-save_model(model, 'Stock Predictions Model 2025.keras')
 
 # Load model from SavedModel format
-loaded_model = load_model('saved_model')
+loaded_model = load_model('Stock Predictions Model 2025.keras')
 
 
 # Streamlit setup
