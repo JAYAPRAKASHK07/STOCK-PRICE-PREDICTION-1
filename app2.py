@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import requests
 
 # Define the URL of the raw Keras model file in your GitHub repository
-model_url = 'https://github.com/JAYAPRAKASHK07/STOCK-PRICE-PREDICTION-1.git'
+model_url = 'https://github.com/JAYAPRAKASHK07/STOCK-PRICE-PREDICTION-1/Stock Predictions Model 2025.keras'
 
 # Download the model file from GitHub
 response = requests.get(model_url)
