@@ -6,9 +6,14 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
+from tensorflow.keras.models import load_model, save_model
 
-# Load the pre-trained model
-model = load_model('https://github.com/JAYAPRAKASHK07/STOCK-PRICE-PREDICTION-1/blob/main/Stock%20Predictions%20Model%202025.keras')
+# Save model in SavedModel format
+save_model(model, 'Stock Predictions Model 2025.keras')
+
+# Load model from SavedModel format
+loaded_model = load_model('saved_model')
+
 
 # Streamlit setup
 st.header('Stock Price Predictor')
