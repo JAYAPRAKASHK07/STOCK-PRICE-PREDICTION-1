@@ -8,6 +8,20 @@ from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
 import os  # Import the os module
 
+import os
+from keras.models import load_model
+
+# Define the path to your model file
+model_path = r"C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION\Stock Predictions Model 2025.keras"
+
+# Check if the model file exists
+if os.path.exists(model_path):
+    # Load the pre-trained model
+    model = load_model(model_path)
+    print("Model loaded successfully.")
+else:
+    print(f"Error: Model file '{model_path}' not found.")
+
 # Get the absolute path to the directory containing the script
 script_directory = os.path.dirname(os.path.abspath(r"C:\Users\kjp94\repository\STOCK-PRICE-PREDICTION"))
 
